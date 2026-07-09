@@ -5,6 +5,10 @@
 
   "Meltdown": { "title": "Meltdown",
   "subtitle": "Event",
+  "content1": "Meltdown is an event triggered by the reactor's shield detonation. The only current method of getting this event to happen is by heating the reactor core above 3000°C and waiting for the shield to explode. The meltdown has 3 phases, the first one being the shutdown phase, where you can initialise the EMTS systems within a short window and obtain the ''Emergency protocols'' badge. In Phase 2 (Thermal Runaway), you're not able to do anything (yet — v1.1.0 should add EDEN, where you'll be able to try to shut down the reactor). In phase 3, the reactor meltdown is completely unstoppable and your only goal is to evacuate the facility. Phase 4. The core ruptures and forms into a black hole and eventually detonates.",
+  "content2": "During meltdown you can earn 6 badges: Meltdown (Have the full event play out from phases 1-4), Emergency protocols (shut down the reactor), Why would you do that? (press the E-coolant button 30 seconds before it detonates), Hey, wanna see me speedrun? (shut down the PRC really quickly), Seriously? (meet shutdown requirements early but don't shut it down), Can't rely on corporate... (escape outside and wait until the explosion), and Locked in (survive in the bunker).",
+  "content3": "During phase 1, it plays ''[V2] Chaotic Fusion'' by Zadonoace. In phase 2 and 3, it plays ''THOUGHT DEPRIVATION'' by Zadonoace and TWIXY141.",
+  "content4": "",
   "content1": "Meltdown is an event caused by shield detonation. You can trigger it by heating the reactor core above 3000°C and waiting for the shield to explode. There are 3 phases of Meltdown. The first phase is the shutdown phase, where you're able to shut down the reactor core and earn the badge ''Emergency protocols''. In Phase 2, you're not able to do anything (yet — v1.1.0 should add EDEN, where you'll be able to try to shut down the reactor). In phase 3, you need to evacuate.",
   "content2": "During meltdown you can earn 6 badges: Meltdown (experience meltdown), Emergency protocols (shut down the reactor), Why would you do that? (press the E-coolant button 30 seconds before it detonates), Hey, wanna see me speedrun? (shut down the PRC really quickly), Seriously? (meet shutdown requirements early but don't shut it down), Can't rely on corporate... (escape outside and wait until the explosion), and Locked in (survive in the bunker).",
   "content3": "During phase 1, it plays ''[V2] Chaotic Fusion'' by Zadonoace. In phase 2, it plays ''THOUGHT DEPRIVATION'' by Zadonoace and TWIXY141.",
@@ -24,7 +28,7 @@
  },
   "Stall": { "title": "Stall",
   "subtitle": "Event",
-  "content1": "Stall is an event caused by low reaction levels. You can trigger it by keeping the PRC below 0°C. After the core stalls, you'll need to wait a few minutes before you can start it up again. Once the core stalls, the lights will turn off for a few minutes. You can turn on the emergency generators to turn the lights back on, but this won't work if they were already on before, and it won't increase the waiting time until you can start up the reactor again.",
+  "content1": "Stall is an event caused by low temperatures. You can trigger it by keeping the PRC below 0°C. After the core stalls, you'll need to wait a few minutes for ReactorLink's systems to restart so you can restart the core. During this short window you can sync the generators with the grid (which will restore the power), but this won't work if they were already on before, and it won't increase the waiting time until you can start up the reactor again.",
   "content2": "You can only earn one badge here, ''Stall''. Stall does not cause instability. Right now there is no OST for Stall.",
   "image": "stall.png"
  },
@@ -45,25 +49,25 @@
  },
   "Startup": { "title": "Startup",
   "subtitle": "Event",
-  "content1": "Startup is an event where you start up the reactor. If you are a researcher or reactor operator, you'll get credits from it. There is also a chance of startup failure. To do startup, you need to scan the keycard, press the shield formation button, and press the red button (picture 1). After that, the lasers will start creating a shield and starting up the PRC (picture 2).",
+  "content1": "Startup or Ignition is an event in which the reactor lasers initialise and a core forms. If you are a researcher or reactor operator, you'll earn credits from it. There is also a chance of startup failure. To do startup, you need to scan the keycard, press the shield formation button, and press the red button (picture 1). After that, the lasers will start creating a shield and starting up the PRC (picture 2).",
   "content2": "Startup has its own OST, ''Quantum Quake'' by ZadonoAce. There is no badge for startup.",
   "image": "startup.png"
  },
   "Startup failure": { "title": "Startup failure",
   "subtitle": "Event",
-  "content1": "Startup failure is an event where startup fails. To do that, you need to be lucky and simply wait without touching the startup button. Wait until shield strength drops to 20-30, since below that you'll need to remake the shield again. After that, there is a chance startup failure will occur. You will need to restart the PRC later.",
+  "content1": "Startup failure is an event where the shield fails to take in the sudden reaction from the core and bursts. To trigger this, you'll need to be lucky and simply wait without touching the startup button. Wait until shield strength drops to 20-30, since below that you'll need to restart the shield formation sequence. After that, there is a chance startup failure will occur. You will need to restart the PRC later.",
   "content2": "Startup failure uses the same OST as Startup, ''Quantum Quake'' by ZadonoAce. There is a badge for startup failure named Miscalculated.",
   "image": "startupfail.png"
  },
   "Shutdown": { "title": "Shutdown",
   "subtitle": "Event",
-  "content1": "Shutdown is an event which happens after a successful EMTS attempt.",
+  "content1": "Shutdown is an event which happens after a successful EMTS attempt. This is where ReactorLink succesfully repairs and re-initialises the Stabilisation Lasers, eventually cooling down the core and triggering a reaction loss.",
   "content2": ""
  },
   "EDEN": { "title": "EDEN",
   "subtitle": "Event, v1.1.0",
-  "content1": "There is no info right now about EDEN. This event should overload the stabilization lasers in phase 2 to attempt shutdown again.",
-  "content2": "There is no info on whether there will be any OST or badges for it."
+  "content1": "There is no info right now about EDEN. This event supposedly overloads the stabilization lasers in phase 2 which triggers a reaction loss, and shuts down the core.",
+  "content2": "There is no info on whether there will be any OST or badges for it. It is suspected that a remixed version of Thought Deprivation will play during the laser overload process."
  },
   "EMTS": { "title": "EMTS",
   "subtitle": "Event",
@@ -73,7 +77,7 @@
  },
   "Maintenance mode": { "title": "Maintenance mode",
   "subtitle": "Event",
-  "content1": "Maitenance mode is an event caused by a player pressing the ''Maitenance mode'' button. It shuts down the PRC, and to start it up again, the player needs to refuel the lasers.",
+  "content1": "Maintenance mode is an event caused by a player pressing the ''Maintenance mode'' button. It shuts down the PRC, and to start it up again, the player needs to refuel the lasers.",
   "content2": "To refuel the lasers, take fuel cells near the SL3 chamber entry, then go to upper level 1 in the PRC chamber. Unlock the empty cells and place the full fuel cells in them. Repeat until they're all filled, then go to the Maitenance mode controls, complete the check, and start up the core again.",
   "content3": "There is no OST or badge for maintenance mode, but it gives some credits and experience points.",
   "image": "maitenancemode.png"
@@ -85,13 +89,13 @@
 
   "Outside": { "title": "Outside",
   "subtitle": "Location, SL1",
-  "content1": "Outside is a location in SL1.",
+  "content1": "Outside is a location in SL1. It appears to be located in a repurposed dug-out quarry, featuring trees, two entrances and a tunnel to an inaccessible area. There is also an administration building, which has no interior as of now.",
   "content2": "You can get the badge ''Can't rely on corporate...'' by being there while the PRC explodes.",
   "image": "outside.png"
  },
   "SL1": { "title": "SL1",
   "subtitle": "Location, Sublevel",
-  "content1": "SL1 is the highest SL. It has a few locations like the kitchen, access to outside, the entrance zone, entrance zone (exit), access to the upper fan shaft, the reception zone, and the administration office.",
+  "content1": "SL1, or topside is the first level you will come across in the site. It has a few locations like the kitchen, access to outside, the entrance zone, entrance zone (exit), access to the upper fan shaft, the reception zone, and the administration office.",
   "content2": "There are 2 fuse boxes in SL1.",
   "image": "sl1.png"
  },
@@ -103,12 +107,12 @@
  },
   "Facility administration": { "title": "Facility administration zone",
   "subtitle": "Location, SL1",
-  "content1": "Administration zone is a room in SL1. There is not that much information about it.",
+  "content1": "Administration zone is a room in SL1. There is not that much information about it. However, there is an office resembling the one from Five Night's at Freddy's 1.",
   "image": "adminr.png"
  },
   "SL2": { "title": "SL2",
   "subtitle": "Location, Sublevel",
-  "content1": "SL2 is a maintenance sublevel, containing the Emergency Bunker, Emergency Generators, cooling pumps, air pumps, cargo bay, maintenance office, and mines.",
+  "content1": "SL2 is a maintenance sublevel, containing the Emergency Bunker, Emergency Generators, cooling pumps, oxygen pumps, cargo bay, maintenance office, and mines.",
   "content2": "There are 5 fuse boxes in SL2.",
   "image": "sl2.png"
  },
@@ -129,8 +133,10 @@
   "content1": "Communications room has zero functionality. It might be added in later versions, but that's not confirmed.",
   "image": "communicationr.png"
  },
-  "Air pumps": { "title": "Air pumps",
+  "Air pumps": { "title": "Oxygen pumps",
   "subtitle": "Location, SL2",
+  "content1": "Oxygen pumps is an area near the coolant pumps in SL2. It has zero functionality right now. It's suspected they pump oxygen into the facility.",
+  "image": "airp.png"
   "content1": "Air pumps is an area near the coolant pumps in SL2. It has zero functionality right now.",
   "image": "airr.png"
  },
@@ -158,9 +164,9 @@
   "content2": "You can control and view the core there, and also see the developer wall.",
   "image": "controlr.png"
  },
-  "Server farm": { "title": "Server farm",
+  "Server farm": { "title": "Server Array",
   "subtitle": "Location, SL3",
-  "content1": "Server farm is a location in SL3. You can view server and reactorlink stability there.",
+  "content1": "Server Array is a location in SL3. Although it has limited functionality as of now, there is an interactable terminal that lists server and ReactorLink statuses.",
   "image": "servers.png"
  },
   "Laboratories": { "title": "Laboratories",
@@ -429,20 +435,20 @@
   "Shield": { "title": "Shield",
   "subtitle": "Shields",
   "content1": "Reactor Shield is the main part of the PRC which keeps it stable. You must create it before you start up the reactor.",
-  "content2": "",
+  "content2": "Once it was used in the Finnish Army, but it was later aquired by Solaris Corp to use in the PRC.",
   "image": "shield.png"
  },
 
-  "AUX Shield": { "title": "AUX Shield",
+  "AUX Shield": { "title": "Auxiliary Shield",
   "subtitle": "Shields",
-  "content1": "The AUX Shield activates during meltdown to replace the shield and try to keep the core stable. While it's not a full replacement for the reactor shield, since it's weaker, it increases the chance of shutdown.",
+  "content1": "The Auxiliary Shield activates during meltdown to replace the primary shield and try to keep the core stable. While it's not a full replacement for the reactor shield, since it's weaker, it increases the chance of shutdown.",
   "content2": "",
   "image": "AUX shield.png"
  },
 
-  "INT Shield": { "title": "INT Shield",
+  "INT Shield": { "title": "Internal Shield",
   "subtitle": "Shields",
-  "content1": "INT Shield is the last layer of shields, used when the AUX shield can't be activated and the PRC is too unstable.",
+  "content1": "The Internal Shield is the last layer of shields, used when the Auxiliary shield can't be activated and the PRC is too unstable.",
   "content2": "",
   "image": "INT shield.png"
  },
@@ -612,7 +618,7 @@
   "SCDI": { "title": "SCDI",
   "subtitle": "Game",
   "content1": "While unavailable right now, SCDI was a game first named ''ACG: Reimaginated'', a recreation of ACG. It was later renamed to ''Solaris Corporation Development Institute''. The developers are working on a final update.",
-  "content2": ""
+  "content2": "SCDI was made by awakeappled on Roblox and later acquired by Solaris. It will likely be featured in ACG Origins."
  },
 
   "ACG Origins": { "title": "ACG Origins",
@@ -629,7 +635,7 @@
  },
   "Death messages": { "title": "Death messages",
   "subtitle": "Other",
-  "content1": "Death messages are small text which display when you die. Examples are: ''Pernament sleeping subscription detected. Cancelling suscription immediatelly'', or ''Hold on, let me promote you back to...''"
+  "content1": "Death messages are small text which display when you die. Examples are: ''Permanent sleeping subscription detected. Cancelling subscription immediately'', or ''Hold on, let me promote you back to...'' It is unknown if these messages have any lore implication."
  },
   "Terminal": { "title": "Terminal",
   "subtitle": "Other",
@@ -651,7 +657,7 @@
  },
   "Solaris Corporation": { "title": "Solaris Corporation",
   "subtitle": "Lore",
-  "content1": "Solaris Corporation is a lava lamp company... which appears to also be the owner of PRC. Solaris Corporation started as a lava lamp company, but in 1987 they decided to start developing PRC. Solaris stock prices fell from 80 EUR to 30 EUR, and in 2026, they started the PRC."
+  "content1": "Solaris Corporation started as a lava lamp company, but in 1987 they decided to invent the PRC (known at the time as Project Ignite). It was a fusion core (possibly a modified variant of Inertial Containment Fusion) having a reaction sustained by extremely powerful lasers. Solaris stock prices fell from 80 EUR to 30 EUR due to this massive change."
  },
   "SDS": { "title": "SDS",
   "subtitle": "Other",
